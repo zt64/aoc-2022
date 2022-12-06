@@ -4,7 +4,7 @@ fun main() {
     fun part1(): Int {
         val distinctItems = 4
 
-        val window = input.windowed(distinctItems, 1).first { window ->
+        val window = input.windowed(distinctItems).first { window ->
             window.toList().distinct().size == distinctItems
         }
 
@@ -14,7 +14,7 @@ fun main() {
     fun part2(): Int {
         val distinctItems = 14
 
-        val window = input.windowed(distinctItems, 1).first { window ->
+        val window = input.windowed(distinctItems).first { window ->
             window.toList().distinct().size == distinctItems
         }
 
