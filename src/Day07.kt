@@ -34,7 +34,7 @@ fun main() {
                             else -> {
                                 currentDirectory.contents
                                     .filterIsInstance<Dir>()
-                                    .find { it.name == directory }!!
+                                    .first { it.name == directory }
                             }
                         }
                     }
