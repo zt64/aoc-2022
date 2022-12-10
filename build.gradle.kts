@@ -8,6 +8,10 @@ repositories {
     mavenCentral()
 }
 
+kotlin {
+    jvmToolchain(19)
+}
+
 tasks {
     sourceSets {
         main {
